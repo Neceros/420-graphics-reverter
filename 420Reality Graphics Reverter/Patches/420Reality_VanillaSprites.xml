@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+    <!-- <success>Always</success> -->
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/graphicData/texPath</xpath>
+        <value>
+    			<texPath>Things/Plant/SmokeleafPlant</texPath>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SmokeleafLeaves"]/graphicData/texPath</xpath>
+        <value>
+          <texPath>Things/Item/Resource/PlantFoodRaw/SmokeleafLeaves</texPath>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SmokeleafJoint"]/graphicData/texPath</xpath>
+        <value>
+          <texPath>Things/Item/Drug/Joint</texPath>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+</Patch>
